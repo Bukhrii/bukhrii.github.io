@@ -1,0 +1,53 @@
+body {
+  background-color: #f3f4f5;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #273036;
+}
+
+.jumbotron h1,
+img,
+p {
+  padding: 0.3rem;
+}
+
+#projects {
+  background-color: #273036;
+}
+
+footer {
+  background-color: #273036;
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 999;
+  transition: 0.5s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+section #jumbotron,
+#about,
+#projects,
+#contact {
+  padding: 5rem;
+}
